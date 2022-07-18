@@ -85,6 +85,7 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     color: #fff;
+    margin-bottom: 100px;
 }
 
 .promo__inner {
@@ -121,3 +122,44 @@ body {
     padding: 27px 125px 23px 90px;
 }
 
+/* FACTS */
+
+.facts__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 95px;
+    margin-bottom: 200px;
+}
+
+.facts__item {
+    max-width: 204px;
+    position: relative;
+    margin-top: 35px;
+}
+
+.facts__item::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    border: 5px solid #e4eddc;
+    border-radius: 50%;
+    top: -35px;
+    left: -40px;
+}
+
+.facts__item-title {
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #a4c58c;
+    border-bottom: 3px solid #a4c58c;
+    margin-bottom: 30px;
+}
+
+.facts__item-title small {
+    font-size: 30px;
+}
+
+.facts__item-text {
+}
