@@ -1,0 +1,53 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #303030;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header__delivery {
+    margin-left: 30px;
+    font-size: 16px;
+    color: #9a9a9a;
+    margin-right: auto;
+}
+
+.header__phone-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header__phone-link {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #303030;
+}
+
+.header__phone-link::before {
+    content: url(../img/tel.png);
+    padding-right: 10px;
+}
+
+.header__phone-details {
+    font-size: 12px;
+    color: #9a9a9a;
+}
