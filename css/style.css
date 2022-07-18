@@ -167,9 +167,6 @@ body {
     font-size: 30px;
 }
 
-.facts__item-text {
-}
-
 /* DISIASES */
 
 .disiases {
@@ -288,4 +285,73 @@ body {
 }
 .disiases__btn::after {
     right: 115px;
+}
+
+/* FEATURES */
+
+.features_inner {
+    display: flex;
+    gap: 70px;
+    margin-bottom: 200px;
+}
+.features__photo-box {
+    margin-left: -275px;
+}
+.features__photo-fig {
+    position: relative;
+}
+.features__photo-img {
+}
+.features__photo-caption {
+    position: absolute;
+    padding: 20px;
+    background-color: #fff;
+    top: 480px;
+    left: 285px;
+}
+.features__photo-text {
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 39px;
+    border: 1px solid #97b979;
+    background-color: #fff;
+    max-width: 550px;
+}
+.features__photo-btn {
+    padding: 30px 103px 30px 40px;
+    top: 27px;
+}
+.features__info-box {
+    padding-top: 50px;
+    flex-basis: 500px;
+}
+.features__info-title {
+    max-width: 370px;
+    padding-bottom: 40px;
+}
+.features__info-subtitle {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.features__info-list {
+}
+.features__info-item {
+    padding: 27px 43px;
+    position: relative;
+}
+.features__info-item::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-right: 3px solid #97b979;
+    border-bottom: 3px solid #97b979;
+    transform: rotate(-45deg);
+    left: 0;
+    top: 43%;
 }
