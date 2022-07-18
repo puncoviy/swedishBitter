@@ -294,14 +294,15 @@ body {
     gap: 70px;
     margin-bottom: 200px;
 }
+
 .features__photo-box {
     margin-left: -275px;
 }
+
 .features__photo-fig {
     position: relative;
 }
-.features__photo-img {
-}
+
 .features__photo-caption {
     position: absolute;
     padding: 20px;
@@ -309,6 +310,7 @@ body {
     top: 480px;
     left: 285px;
 }
+
 .features__photo-text {
     right: 0;
     bottom: 0;
@@ -318,18 +320,22 @@ body {
     background-color: #fff;
     max-width: 550px;
 }
+
 .features__photo-btn {
     padding: 30px 103px 30px 40px;
     top: 27px;
 }
+
 .features__info-box {
     padding-top: 50px;
     flex-basis: 500px;
 }
+
 .features__info-title {
     max-width: 370px;
     padding-bottom: 40px;
 }
+
 .features__info-subtitle {
     text-transform: uppercase;
     display: inline-block;
@@ -338,12 +344,12 @@ body {
     font-weight: 700;
     margin-bottom: 30px;
 }
-.features__info-list {
-}
+
 .features__info-item {
     padding: 27px 43px;
     position: relative;
 }
+
 .features__info-item::before {
     position: absolute;
     content: "";
@@ -354,4 +360,61 @@ body {
     transform: rotate(-45deg);
     left: 0;
     top: 43%;
+}
+
+/* CONTENT */
+
+.content {
+    background: linear-gradient(transparent 245px, #f6f9f3 246px);
+    padding-bottom: 70px;
+}
+
+.content__title {
+    max-width: 440px;
+    margin-bottom: 30px;
+}
+
+.content__list {
+    padding: 33px 16px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    counter-reset: content-count;
+}
+
+.content__item {
+    flex-basis: 370px;
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 78px;
+    text-align: center;
+    border: 1px solid #e4eddc;
+    z-index: 1;
+}
+
+.content__item::before {
+    position: absolute;
+    counter-increment: content-count;
+    content: "0" counter(content-count);
+    font-size: 150px;
+    font-weight: 900;
+    color: #f7f9f3;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.content__item-img {
+    min-height: 90px;
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 2;
+}
+.content__item-text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
