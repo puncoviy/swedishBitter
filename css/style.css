@@ -39,6 +39,12 @@ body {
     right: 70px;
 }
 
+.title {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+}
+
 /* HEADER */
 
 .header__inner {
@@ -162,4 +168,124 @@ body {
 }
 
 .facts__item-text {
+}
+
+/* DISIASES */
+
+.disiases {
+    background: linear-gradient(transparent 180px, #e4eddc 181px, #e4eddc 720px, transparent 721px);
+    padding-bottom: 200px;
+}
+
+.disiases__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.disiases__box {
+    flex-basis: 650px;
+}
+.disiases__title {
+    max-width: 448px;
+    margin-top: 48px;
+    margin-bottom: 45px;
+}
+.disiases__list {
+    counter-reset: dis-counter;
+}
+.disiases__item {
+    padding: 25px 44px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    border-bottom: 1px solid #a4c58c;
+}
+.disiases__item::before {
+    position: absolute;
+    left: 0;
+    /* content: "1"; */
+    counter-increment: dis-counter;
+    content: "0" counter(dis-counter) ".";
+    color: #a4c58c;
+    z-index: 1;
+}
+.disiases__item::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-right: 3px solid #97b979;
+    border-bottom: 3px solid #97b979;
+    transform: rotate(-45deg);
+    right: 30px;
+    top: 43%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.disiases__item.active::after {
+    opacity: 1;
+}
+.disiases__map {
+    flex-basis: 500px;
+    position: relative;
+}
+.disiases__map-img {
+    margin-bottom: 50px;
+}
+.disiases__map small {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    background-color: #a5c98a;
+    border: 9px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+.disiases__map small.active {
+    opacity: 1;
+}
+
+.disiase-1 {
+    top: 13%;
+    left: 45%;
+}
+.disiase-2 {
+    top: 31%;
+    left: 36%;
+}
+.disiase-3 {
+    top: 4%;
+    left: 52%;
+}
+.disiase-4 {
+    top: 24%;
+    left: 45%;
+}
+.disiase-5 {
+    top: 4%;
+    left: 40%;
+}
+.disiase-6 {
+    top: 45%;
+    left: 40%;
+}
+.disiase-7 {
+    top: 18.5%;
+    left: 45%;
+}
+.disiases__btn {
+    width: 500px;
+    display: inline-block;
+    padding: 30px 154px 30px 124px;
+}
+.disiases__btn::after {
+    right: 115px;
 }
