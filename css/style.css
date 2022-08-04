@@ -326,6 +326,10 @@ body {
     top: 27px;
 }
 
+.features__photo-btn::after {
+    right: 45px;
+}
+
 .features__info-box {
     padding-top: 50px;
     flex-basis: 500px;
