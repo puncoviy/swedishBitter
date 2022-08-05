@@ -37,6 +37,11 @@ body {
     position: absolute;
     content: url(../img/btn-arrow.png);
     right: 70px;
+    transition: transform .7s;
+}
+
+.btn:hover::after {
+    transform: translateX(50%);
 }
 
 .title {
@@ -219,7 +224,7 @@ body {
     right: 30px;
     top: 43%;
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity .5s;
 }
 .disiases__item.active::after {
     opacity: 1;
@@ -234,7 +239,7 @@ body {
 .disiases__map small {
     position: absolute;
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity .5s;
     font-size: 12px;
     line-height: 25px;
     font-weight: 700;
