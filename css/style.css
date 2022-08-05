@@ -662,3 +662,242 @@ body {
     font-size: 12px;
     color: #9a9a9a;
 }
+
+@media (max-width: 1276px) {
+    .facts__item::before {
+        top: 0;
+        left: unset;
+        right: 0;
+    }
+    .compound__inner {
+        flex-wrap: wrap-reverse;
+    }
+    .compound__list {
+        justify-content: center;
+    }
+    .footer__inner {
+        flex-wrap: wrap;
+        gap: 15px 55px ;
+    }
+}
+
+@media (max-width: 1096px) {
+    .features_inner {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .features__info-box {
+        padding-top: 0;
+    }
+    .features__info-title {
+        max-width: unset;
+    }
+    .features__photo-box {
+        margin-left: 0;
+    }
+    .features__photo-img {
+        width: 100%;
+    }
+    .features__photo-caption {
+        width: 590px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .facts__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .guarantee__inner {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    .guarantee__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .guarantee__text,
+    .guarantee__disclaimer-box {
+        margin-left: unset;
+    }
+    .footer__docs {
+        order: 1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 985px) {
+    .disiases__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .disiases__box {
+        flex-basis: 100%;
+    }
+    .disiases__list {
+        display: flex;
+        justify-content: center;
+        gap: 0 30px;
+        flex-wrap: wrap;
+    }
+    .disiases__item {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 838px) {
+    .promo__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        color: #000;
+    }
+    .promo__img {
+        height: 400px;
+    }
+    .promo__info {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .promo__info-text {
+        margin:0 auto 90px;
+    }
+    .compound__inner {
+        margin-top: 20px;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    .guarantee {
+        background: #f6f9f3;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__inner {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .header__delivery {
+        margin-left: unset;
+        margin-right: unset;
+    }
+    .header__phone-box {
+        align-items: center;
+    }
+    .features_inner {
+        margin-bottom: 70px;
+    }
+    .features__info-box {
+        flex-basis: unset;
+    }
+    .features__photo-fig {
+        display: flex;
+        flex-direction: column;
+    }
+    .features__photo-caption {
+        position: relative;
+        top: 0;
+        width: unset;
+    }
+    .features__photo-btn {
+        display: block;
+        top: 0;
+        max-width: 550px;
+    }
+    .disiases {
+        background: linear-gradient(transparent 180px, #e4eddc 181px, #e4eddc 1000px, transparent 1000px);
+    }
+    .disiases__item {
+        flex-basis: 100%;
+    }
+    .content__list {
+        flex-direction: column;
+    }
+    .content__item {
+        flex-basis: unset;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 545px) {
+    body {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .promo {
+        margin-bottom: 15px;
+    }
+    .promo__info-text {
+        font-size: 15px;
+    }
+    .promo__info-btn {
+        display: block;
+    }
+    .promo__info-title {
+        font-size: 38px;
+        margin-bottom: 0;
+    }
+    .promo__info-text {
+        margin: 0 auto 15px;
+    }
+    .facts__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+    .disiases {
+        background: #e4eddc;
+        padding-bottom: 40px;
+        margin-bottom: 50px;
+    }
+    .disiases__map-img {
+        display: none;
+    }
+    .disiases__map small {
+        display: none;
+    }
+    .disiases__btn {
+        width: 100%;
+        padding: 30px 154px 30px 70px;
+    }
+    .disiases__btn::after {
+        right: 50px;
+    }
+    .features__photo-img {
+        position: absolute;
+    }
+    .features__photo-caption {
+        background-color: transparent;
+    }
+    .features__photo-text {
+        background-color: rgba(255, 255, 255, .9);
+    }
+    .features__info-item {
+        padding: 14px 43px;
+    }
+    .compound__info-btn {
+        align-self: unset;
+    }
+    .guarantee {
+        background: #f6f9f3;
+    }
+    .guarantee__img {
+        width: 90%;
+    }
+    .footer__inner {
+        justify-content: center;
+    }
+    .footer__docs {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+}
